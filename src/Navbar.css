@@ -1,0 +1,115 @@
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+  width: 95%;
+  height: 80px;
+  position: fixed;
+}
+.navbar p {
+  margin-left: 10px;
+  font-size: 150%
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+}
+.moon {
+  display: flex;
+  font-size: 1.5em;
+  margin-right: 100px;
+}
+.dark-mode .navbar {
+  background-color: #333333;
+}
+.dark-mode .nav-item {
+  color: #FFFFFF;
+}
+.dark-mode .moon {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 750px) {
+  .navbar p {
+    font-size: 130%;
+  }
+  .nav-item {
+    margin-left: -10%;
+    font-size: larger;
+  }
+  .moon {
+    font-size: 130%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar p {
+    font-size: 130%;
+  }
+  .nav-item {
+    font-size: larger;
+  }
+  .moon {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar p {
+    font-size: 120%;
+  }
+  .nav-item {
+    margin-left: -80px;
+    text-align: left;
+    font-size: larger;
+  }
+  .moon {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .navbar p {
+    font-size: 100%;
+  }
+  .nav-item {
+    margin-left: -20%;
+    text-align: left;
+    font-size: larger;
+  }
+  .moon {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar p {
+    font-size: 100%;
+  }
+  .nav-item {
+    margin-left: -20%;
+    text-align: left;
+    font-size: larger;
+  }
+  .moon {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .navbar p {
+    font-size: 100%;
+  }
+  .nav-item {
+    margin-left: -25%;
+    text-align: left;
+    font-size: larger;
+  }
+  .moon {
+    font-size: large;
+  }
+}
+

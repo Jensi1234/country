@@ -1,38 +1,184 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.dark-mode {
+  background-color: #333333;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.black {
+  color: black;
+}
+.sbar {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.search-bar input {
+  font-size: x-large;
+}
+.region-filter label {
+  margin-right: 8px;
+  font-size: x-large;
+}
+.country {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 10px;
+}
+.card {
+  text-align: center;
+  box-sizing: border-box;
+  width: calc(25.33% - 20px);
+  margin-bottom: 20px;
+  border: 1px solid #333333;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333333;
+}
+#region {
+  font-size: x-large;
+}
+.main1 {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 750px) {
+  .card {
+    width: calc(33.33% - 20px);
   }
-  to {
-    transform: rotate(360deg);
+  .search-bar input {
+    margin-bottom: 10px;
+    font-size: 100%;
+  }
+  .region-filter label {
+    font-size: 100%;
+    margin-left: 50px;
+  }
+  #region {
+    font-size: 100%;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+  .search-bar input {
+    margin-bottom: 10px;
+    font-size: 80%;
+  }
+  .region-filter label {
+    font-size: 90%;
+    margin-left: 50px;
+  }
+  #region {
+    font-size: 90%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-bar input {
+    margin-bottom: 10px;
+    font-size: small;
+  }
+  .region-filter label {
+    font-size: small;
+    margin-left: 50px;
+  }
+  #region {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-bar input {
+    margin-bottom: 10px;
+    font-size: 80%;
+  }
+  .region-filter label {
+    font-size: 90%;
+    margin-left: 50px;
+  }
+  #region {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-bar input {
+    margin-bottom: 10px;
+    font-size: 60%;
+  }
+  .region-filter label {
+    font-size: 70%;
+    margin-left: 50px;
+  }
+  #region {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-bar input {
+    margin-bottom: 10px;
+    font-size: 60%;
+  }
+  .region-filter label {
+    font-size: 70%;
+    margin-left: 50px;
+  }
+  #region {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .search-bar input {
+    margin-bottom: 10px;
+    font-size: 58%;
+  }
+  .region-filter label {
+    font-size: 69%;
+    margin-left: 30px;
+  }
+  #region {
+    font-size: 60%;
+  }
+}
+
+
+
+
+
+
+

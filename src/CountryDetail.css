@@ -1,0 +1,53 @@
+.app {
+  height: 100vh;
+}
+.image img {
+  max-width: 80%;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid #333333;
+}
+.back-button {
+  font-size: large;
+  margin-left: 20px;
+}
+.container {
+  display: flex;
+  heigt: 100%;
+}
+.flex1, .flex2 {
+  flex: 50%;
+}
+.flex2 {
+  display: flex;
+  flex-direction: column;
+}
+.item1, .item2 {
+  flex: 50%;
+}
+.lower {
+  display: flex;
+}
+.selected-country {
+  height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  .image img {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid #333333;
+  }
+  .upper {
+    margin-top: 200px;
+    margin-left: -200px;
+  }
+  .lower {
+    margin-left: -200px;
+  }
+  .back-button {
+    font-size: small;
+    margin-left: 20px;
+  }
+}
